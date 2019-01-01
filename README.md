@@ -6,3 +6,6 @@ The project uses pyenv and pytest.  It also demonstrates how to generate egg fil
 
 Here is a [link](https://medium.com/@mrpowers/creating-a-pyspark-project-with-pytest-pyenv-and-egg-files-d2709eb1604c) to a blog post that explains how this application was built.
 
+Forked from [MrPowers](https://github.com/MrPowers/gill) to run spark tests in a local Docker container to avoid having to setup and maintain a local spark environment.  Using docker data science container from [here](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook)
+
+
