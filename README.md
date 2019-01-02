@@ -12,6 +12,7 @@ how to setup the docker container is not in scope for this project.  However, yo
 
 ## How to run in container
 
-This process executes in a already running local container named spark-custom.  
+This process executes in a already running local container.
+See docker directory
 
 

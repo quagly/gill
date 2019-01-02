@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-MY_UID=$UID
+source .config
 
 docker exec -u ${MY_UID} \
-  --workdir /home/jovyan/spark-app/gill \
-  spark-custom \
+  --workdir $WORK_DIR \
+  ${CONTAINER_NM} \
   python -m pytest

@@ -2,12 +2,11 @@
 
 set -euo pipefail
 
-MY_UID=$UID
+source .config
 
 docker exec -u ${MY_UID} \
-  --workdir /home/jovyan/spark-app/gill \
-  --env SPARK_CONF_DIR=/home/jovyan/spark-app/conf \
-  spark-custom \
+  --workdir ${WORK_DIR} \
+  ${CONTAINER_NM} \
   spark-submit \
     --master local[*] \
     --py-files dist/gill-0.0.1-py3.6.egg \
